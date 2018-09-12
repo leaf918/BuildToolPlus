@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BuildToolPlus" />
+        <module name="playground" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BuildToolPlus" target="1.5" />
+      <module name="playground" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
