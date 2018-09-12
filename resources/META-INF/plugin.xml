@@ -30,6 +30,9 @@
 
   <actions>
     <!-- Add your actions here -->
+    <action id="BuildToolPlus" class="ai.keye.MenuEntry" text="menu entry" description="build tool window entry">
+      <add-to-group group-id="WindowMenu" anchor="first"/>
+    </action>
   </actions>
 
 </idea-plugin>

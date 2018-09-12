@@ -1,0 +1,20 @@
+edit : main.o kbd.o command.o display.o  insert.osearch.o files.o utils.o \
+	cc -o edit main.o kbd.o command.o display.o  insert.o search.o files.outils.o
+main.o : main.c defs.h
+	cc -c main.c
+kbd.o : kbd.c defs.hcommand.h
+	cc -c kbd.c
+command.o : command.cdefs.h command.h
+	cc -c command.c
+display.o : display.cdefs.h buffer.h
+	cc -c display.c
+insert.o : insert.cdefs.h buffer.h
+	cc -c insert.c
+search.o : search.cdefs.h buffer.h
+	cc -c search.c
+files.o : files.c defs.hbuffer.h command.h
+	cc -c files.c
+utils.o : utils.c defs.h
+	cc -c utils.c
+clean :
+	rm edit main.o kbd.o command.o display.o insert.o search.o files.o utils.o
