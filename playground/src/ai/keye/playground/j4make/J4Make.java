@@ -96,6 +96,7 @@ public class J4Make {
                     build()
             );
             final CommandLineParser parser = new DefaultParser();
+            // parse command line paramenters.
             final CommandLine cmdLine = parser.parse(options, args);
             final List<String> arglist = cmdLine.getArgList();
 
